@@ -19,7 +19,7 @@
     },
     {
       id: "stadium",
-      name: "شعبه استادیوم",
+      name: "شعبه نامجو",
       desc: "رشت، نامجو، روبروی درب استادیوم",
       image: "assets/images/branches/branch2.jpeg",
       score: 4.7,
