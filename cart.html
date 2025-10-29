@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Home</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              marhey: ["Marhey", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body class="font-marhey bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <!-- index.html (excerpt) -->
+    <main id="main" class="flex-grow flex flex-col bg-gray-100 bg-opacity-30">
+      the cart content
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Include JS -->
+    <script src="js/include.js"></script>
+
+    <!-- After include.js -->
+    <script src="js/cart.js" defer></script>
+
+    
+
+    <!-- Lucide icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

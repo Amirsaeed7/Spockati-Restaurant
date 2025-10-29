@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Header</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind + Lucide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              marhey: ["Marhey", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+
+  <body class="font-marhey">
+    <!-- HEADER -->
+    <header class="main-header text-white shadow-lg">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mx-4 gap-3 md:gap-0 py-3"
+      >
+        <!-- Logo -->
+        <div
+          class="logo text-xl md:text-2xl font-bold flex flex-row gap-2 items-center text-center md:text-right"
+        >
+          <p>مجموعه رستوران‌های اس‌پاکتی</p>
+          <img
+            src="../assets/images/logo.png"
+            alt="Logo"
+            class="w-10 h-10 md:w-12 md:h-12"
+          />
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-base md:text-lg">
+          <a
+            href="index.html"
+            class="flex items-center gap-1 hover:text-[#F6AE28] transition-colors"
+          >
+            <i data-lucide="home" class="w-5 h-5"></i>
+            خانه
+          </a>
+          <a
+            href="cart.html"
+            class="flex items-center gap-1 hover:text-[#F6AE28] transition-colors"
+          >
+            <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+            سبد خرید
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-1 hover:text-[#F6AE28] transition-colors"
+          >
+            <i data-lucide="bell" class="w-5 h-5"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

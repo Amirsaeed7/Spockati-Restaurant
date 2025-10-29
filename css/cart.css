@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Vazirmatn', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: url('../assets/images/backgrounds/background6.jpg') no-repeat center / cover;
+}
+
+
+.main-header, .main-footer {
+  background-color: rgb(40,56,69, 0.9);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  flex: content;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-header nav {
+  margin-top: 0.5rem;
+}
+
+.main-header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.main-header nav a:hover {
+  text-decoration: underline;
+}
