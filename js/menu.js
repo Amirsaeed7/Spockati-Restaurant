@@ -8,33 +8,33 @@
     { name: "اسپاگتی تن ماهی", desc: "اسپاگتی + پوره گوجه + سیر + روغن زیتون + تن ماهی + پنیر", price: 110, category: "اسپاگتی", is_new: true, image: "" },
 
     // 🟩 پنه
-    { name: "پنه آلفردو", desc: "پنه + سس قارچ + خامه + مرغ + پنیر", price: 180, category: "پنه", is_new: false, image: "../assets/images/Spockati_Images1/Penne Alfredo.jpg" },
-    { name: "پنه پستو", desc: "پنه + سس ریحان + گردو + روغن زیتون + مرغ + پنیر", price: 150, category: "پنه", is_new: false, image: "../assets/images/Spockati_Images1/Penne Arrabbiata.jpg" },
-    { name: "پنه استروگانف", desc: "پنه + سس قارچ + خامه + گوشت گوساله + پنیر", price: 190, category: "پنه", is_new: false, image: "../assets/images/Spockati_Images1/Penne Stroganoff.jpg" },
-    { name: "پنه تن ماهی", desc: "پنه + سس خامه + تن ماهی + ادویه مخصوص", price: 160, category: "پنه", is_new: true, image: "../assets/images/Spockati_Images1/Penne Tuna.jpg" },
+    { name: "پنه آلفردو", desc: "پنه + سس قارچ + خامه + مرغ + پنیر", price: 180, category: "پنه", is_new: false, image: "assets/images/Spockati_Images1/Penne Alfredo.jpg" },
+    { name: "پنه پستو", desc: "پنه + سس ریحان + گردو + روغن زیتون + مرغ + پنیر", price: 150, category: "پنه", is_new: false, image: "assets/images/Spockati_Images1/Penne Arrabbiata.jpg" },
+    { name: "پنه استروگانف", desc: "پنه + سس قارچ + خامه + گوشت گوساله + پنیر", price: 190, category: "پنه", is_new: false, image: "assets/images/Spockati_Images1/Penne Stroganoff.jpg" },
+    { name: "پنه تن ماهی", desc: "پنه + سس خامه + تن ماهی + ادویه مخصوص", price: 160, category: "پنه", is_new: true, image: "assets/images/Spockati_Images1/Penne Tuna.jpg" },
 
     // 🟨 مک
     { name: "مک اند چیز", desc: "ماکارونی + سس پنیر + پودر چیپس + پنیر", price: 105, category: "مک", is_new: false, image: "" },
     { name: "مک گوشت", desc: "ماکارونی + سس پنیر + سس گوشت چرخ کرده + پنیر", price: 145, category: "مک", is_new: false, image: "" },
     { name: "مک سویا", desc: "ماکارونی + سس پنیر + سس سویا + پنیر", price: 125, category: "مک", is_new: false, image: "" },
-    { name: "مک بلونیز", desc: "ماکارونی + سس گوشت چرخ کرده + پنیر", price: 150, category: "مک", is_new: false, image: "../assets/images/Spockati_Images1/Mac Bolognese.jpg" },
-    { name: "مک آلفردو", desc: "ماکارونی + سس قارچ + خامه + مرغ + پنیر", price: 190, category: "مک", is_new: false, image: "../assets/images/Spockati_Images1/Mac Alfredo.jpg" },
-    { name: "مک استروگانف", desc: "ماکارونی + سس قارچ + خامه + گوشت گوساله + پنیر", price: 210, category: "مک", is_new: false, image: "../assets/images/Spockati_Images1/Mac Stroganoff.jpg" },
+    { name: "مک بلونیز", desc: "ماکارونی + سس گوشت چرخ کرده + پنیر", price: 150, category: "مک", is_new: false, image: "assets/images/Spockati_Images1/Mac Bolognese.jpg" },
+    { name: "مک آلفردو", desc: "ماکارونی + سس قارچ + خامه + مرغ + پنیر", price: 190, category: "مک", is_new: false, image: "assets/images/Spockati_Images1/Mac Alfredo.jpg" },
+    { name: "مک استروگانف", desc: "ماکارونی + سس قارچ + خامه + گوشت گوساله + پنیر", price: 210, category: "مک", is_new: false, image: "assets/images/Spockati_Images1/Mac Stroganoff.jpg" },
 
     // 🟪 فتوچینی
     { name: "فتوچینی گوشت", desc: "فتوچینی + سس گوشت چرخ کرده + پنیر", price: 135, category: "فتوچینی", is_new: false, image: "" },
     { name: "فتوچینی سویا", desc: "فتوچینی + سس سویا + پنیر", price: 115, category: "فتوچینی", is_new: false, image: "" },
-    { name: "فتوچینی آلفردو", desc: "فتوچینی + سس قارچ + خامه + مرغ + پنیر", price: 180, category: "فتوچینی", is_new: false, image: "../assets/images/Spockati_Images1/Fettuccine Alfredo.jpg" },
-    { name: "فتوچینی پستو", desc: "فتوچینی + سس ریحان + گردو + مرغ + پنیر", price: 150, category: "فتوچینی", is_new: false, image: "../assets/images/Spockati_Images1/Fettuccine Arrabbiata.jpg" },
-    { name: "فتوچینی بلونیز", desc: "فتوچینی + سس گوشت چرخ کرده + پنیر", price: 150, category: "فتوچینی", is_new: false, image: "../assets/images/Spockati_Images1/Fettuccine Bolognese.jpg" },
+    { name: "فتوچینی آلفردو", desc: "فتوچینی + سس قارچ + خامه + مرغ + پنیر", price: 180, category: "فتوچینی", is_new: false, image: "assets/images/Spockati_Images1/Fettuccine Alfredo.jpg" },
+    { name: "فتوچینی پستو", desc: "فتوچینی + سس ریحان + گردو + مرغ + پنیر", price: 150, category: "فتوچینی", is_new: false, image: "assets/images/Spockati_Images1/Fettuccine Arrabbiata.jpg" },
+    { name: "فتوچینی بلونیز", desc: "فتوچینی + سس گوشت چرخ کرده + پنیر", price: 150, category: "فتوچینی", is_new: false, image: "assets/images/Spockati_Images1/Fettuccine Bolognese.jpg" },
 
     // 🟦 لازانیا
     { name: "لازانیا", desc: "لازانیا + سس گوشت چرخ کرده + پنیر شامل", price: 180, category: "لازانیا", is_new: false, image: "" },
 
     // 🧀 افزودنی‌ها
-    { name: "پودر چیپس", desc: "پودر چیپس تازه و خوشمزه", price: 15, category: "افزودنی‌ها", is_new: false, image: "../assets/images/Spockati_Images1/chips.jpg" },
-    { name: "پنیر گودا", desc: "پنیر گودا برای افزودن به غذا", price: 15, category: "افزودنی‌ها", is_new: false, image: "../assets/images/Spockati_Images1/cheese.jpg" },
-    { name: "زیتون", desc: "زیتون تازه", price: 15, category: "افزودنی‌ها", is_new: false, image: "../assets/images/Spockati_Images1/olive.jpg" },
+    { name: "پودر چیپس", desc: "پودر چیپس تازه و خوشمزه", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/Spockati_Images1/chips.jpg" },
+    { name: "پنیر گودا", desc: "پنیر گودا برای افزودن به غذا", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/Spockati_Images1/cheese.jpg" },
+    { name: "زیتون", desc: "زیتون تازه", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/Spockati_Images1/olive.jpg" },
   ];
 
   // DOM refs
