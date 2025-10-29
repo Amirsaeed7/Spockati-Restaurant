@@ -60,16 +60,15 @@
           </a>
           <a
             href="cart.html"
-            class="flex items-center gap-1 hover:text-[#F6AE28] transition-colors"
+            class="flex items-center gap-1 hover:text-[#F6AE28] transition-colors relative"
           >
             <i data-lucide="shopping-cart" class="w-5 h-5"></i> سبد خرید
+            <span
+              id="cartCount"
+              class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold hidden"
+            ></span>
           </a>
-          <a
-            href="#"
-            class="flex items-center gap-1 hover:text-[#F6AE28] transition-colors"
-          >
-            <i data-lucide="bell" class="w-5 h-5"></i>
-          </a>
+
         </nav>
       </div>
     </header>
