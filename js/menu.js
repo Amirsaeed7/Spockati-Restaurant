@@ -35,6 +35,22 @@
     { name: "پودر چیپس", desc: "پودر چیپس تازه و خوشمزه", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/Spockati_Images1/chips.jpg" },
     { name: "پنیر گودا", desc: "پنیر گودا برای افزودن به غذا", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/Spockati_Images1/cheese.jpg" },
     { name: "زیتون", desc: "زیتون تازه", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/Spockati_Images1/olive.jpg" },
+    { name: "سس گوشت", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    { name: "سس سویا", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    { name: "سس تن ماهی", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    { name: "سس بلونیز", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    { name: "سس آلفردو", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    { name: "سس استروگانف", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    { name: "سس آرابیتا", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    { name: "سس پستو", desc: "", price: 15, category: "افزودنی‌ها", is_new: false, image: "assets/images/foods/Sauce.jpg" },
+    
+    //نوشیدنی ها
+    { name: "نوشابه زیرو قوطی", desc: "", price: 44, category: "نوشیدنی", is_new: false, image: "assets/images/foods/Drinks/Zero.jpeg" },
+    { name: "نوشابه فانتا قوطی", desc: "", price: 44, category: "نوشیدنی", is_new: false, image: "assets/images/foods/Drinks/Fanta.jpeg" },
+    { name: "نوشابه کوکا قوطی", desc: "", price: 44, category: "نوشیدنی", is_new: false, image: "assets/images/foods/Drinks/Coca.jpeg" },
+    { name: "نوشابه اسپرایت قوطی", desc: "", price: 44, category: "نوشیدنی", is_new: false, image: "assets/images/foods/Drinks/Sprite.jpeg" },
+    { name: "دوغ خوشگوار", desc: "", price: 26, category: "نوشیدنی", is_new: false, image: "assets/images/foods/Drinks/Doogh.jpeg" },
+    { name: "آب معدنی", desc: "", price: 10, category: "نوشیدنی", is_new: false, image: "assets/images/foods/Drinks/Water.jpeg" }
   ];
 
   // DOM refs
@@ -137,17 +153,18 @@
     const categoryStyles = {
       "همه": { bg: "#AF398D", hover: "#C754A6", icon: `<i data-lucide="utensils" class="w-8 h-8 text-black"></i>` },
       "اسپاگتی": { bg: "#F73A4E", hover: "#FF5E70", img: "assets/images/foods/Spagetti.png" },
-      "مک": { bg: "#F6AE28", hover: "#FFC048", img: "assets/images/foods/Mac.png" },
+      "مک": { bg: "#F4F4F2", hover: "#F4F4FA", img: "assets/images/foods/Mac.png" },
       "پنه": { bg: "#49A078", hover: "#5FBC90", img: "assets/images/foods/Penne.png" },
-      "لازانیا": { bg: "#4138DB", hover: "#5A54E8", img: "assets/images/foods/lasagna.png" },
-      "فتوچینی": { bg: "#9839A3", hover: "#B356BE", img: "assets/images/foods/Fettucine.png" },
+      "لازانیا": { bg: "#F73A4E", hover: "#FF5E70", img: "assets/images/foods/lasagna.png" },
+      "فتوچینی": { bg: "#F6AE28", hover: "#F6AE44", img: "assets/images/foods/Fettucine.png" },
       "افزودنی‌ها": { bg: "#FF7F50", hover: "#FFA273", img: "assets/images/foods/AddOn.png" },
+      "نوشیدنی": { bg: "#4138DB", hover: "#5038E2", img: "assets/images/foods/Drinks.png" }
     };
 
     categories.forEach((cat, idx) => {
       const li = document.createElement("li");
       li.className = `
-        category-btn w-48 rounded-2xl cursor-pointer flex items-center justify-center
+        category-btn w-40 rounded-2xl cursor-pointer flex items-center justify-center
         gap-2 px-4 py-2 shadow-md text-black hover:scale-105 transition-transform duration-300
       `;
 
@@ -202,12 +219,12 @@
             <p class="text-sm text-gray-700 mb-4">${food.desc || ""}</p>
           </div>
           <div class="flex justify-between items-center">
-            <div class="text-right font-bold text-[#F6AE28]">${food.price} هزار تومان</div>
+            <div class="text-right font-bold text-[#F6AE28]">${toPersianDigits(food.price)} هزار تومان</div>
             <div class="flex items-center gap-2">
               <button class="decrease-btn bg-gray-200 hover:bg-gray-300 text-black rounded-full w-8 h-8 flex items-center justify-center" data-name="${food.name}">
                 <i data-lucide="minus" class="w-4 h-4"></i>
               </button>
-              <div class="qty-badge text-sm font-bold" data-name="${food.name}">${getQtyForCurrentBranch(food.name)}</div>
+              <div class="qty-badge text-sm font-bold" data-name="${food.name}">${toPersianDigits(getQtyForCurrentBranch(food.name))}</div>
               <button class="increase-btn bg-[#F73A4E] hover:bg-[#F6AE28] text-white rounded-full w-8 h-8 flex items-center justify-center" data-name="${food.name}">
                 <i data-lucide="plus" class="w-4 h-4"></i>
               </button>
@@ -240,13 +257,13 @@
 
   function updateQtyUI(name) {
     const el = menuContainer.querySelector(`.qty-badge[data-name="${CSS.escape(name)}"]`);
-    if (el) el.textContent = getQtyForCurrentBranch(name);
+    if (el) el.textContent = toPersianDigits(getQtyForCurrentBranch(name));
   }
 
   function updateAllQtyUI() {
     menuContainer.querySelectorAll(".qty-badge").forEach((el) => {
       const name = el.getAttribute("data-name");
-      el.textContent = getQtyForCurrentBranch(name);
+      el.textContent = toPersianDigits(getQtyForCurrentBranch(name));
     });
   }
 

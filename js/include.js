@@ -37,3 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((err) => console.error("Error loading menu:", err));
 });
+
+function toPersianDigits(str) {
+  return str.toString().replace(/\d/g, d => "۰۱۲۳۴۵۶۷۸۹"[d]);
+}

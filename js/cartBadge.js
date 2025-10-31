@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!badge) return;
 
     if (totalCount > 0) {
-      badge.textContent = totalCount;
+      badge.textContent = toPersianDigits(totalCount);
       badge.classList.remove("hidden");
     } else {
       badge.classList.add("hidden");

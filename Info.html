@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اطلاعات | اس‌پاکتی</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind & Lucide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { vazir: ["Vazirmatn", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body class="font-vazir bg-gray-100 flex flex-col min-h-screen">
+    <div id="header-placeholder"></div>
+
+    <main id="main" class="flex-grow flex flex-col bg-white/30 p-6">
+      <section class="max-w-5xl mx-auto bg-white/80 rounded-xl shadow-md p-8">
+        <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">
+          اطلاعات تماس و ساعت کاری
+        </h1>
+
+        <div class="space-y-4 text-gray-700 leading-8 text-justify">
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد.
+          </p>
+
+          <div class="mt-6 grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+              <h2 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-5 h-5 text-green-600"></i>
+                آدرس
+              </h2>
+              <p>تهران، خیابان ولیعصر، بالاتر از میدان ونک، پلاک ۱۲۳</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+              <h2 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <i data-lucide="clock" class="w-5 h-5 text-green-600"></i>
+                ساعت کاری
+              </h2>
+              <p>شنبه تا پنج‌شنبه: ۱۱ صبح تا ۱۱ شب</p>
+              <p>جمعه‌ها و تعطیلات رسمی: ۱۲ ظهر تا ۱۲ شب</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+              <h2 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <i data-lucide="phone" class="w-5 h-5 text-green-600"></i>
+                تلفن تماس
+              </h2>
+              <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+              <h2 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <i data-lucide="mail" class="w-5 h-5 text-green-600"></i>
+                ایمیل
+              </h2>
+              <p>info@espaghetti.ir</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include.js"></script>
+    <script>lucide.createIcons();</script>
+  </body>
+</html>
+ 

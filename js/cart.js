@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- render helpers ---
   function formatPrice(n) {
-    return `${n} هزار تومان`;
+    return `${toPersianDigits(n)} هزار تومان`;
   }
 
   // create a toast and show it (message string)
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <button class="cart-decrease bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center" data-name="${escapeHtml(
               item.name
             )}">-</button>
-            <div class="px-3">${item.quantity}</div>
+            <div class="px-3">${toPersianDigits(item.quantity)}</div>
             <button class="cart-increase bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center" data-name="${escapeHtml(
               item.name
             )}">+</button>
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     summaryInner.innerHTML = `
       <h3 class="text-lg font-bold mb-4">خلاصه سفارش</h3>
-      <div class="flex justify-between mb-2"><div class="text-sm text-gray-600">اقلام</div><div class="font-medium">${itemCount}</div></div>
+      <div class="flex justify-between mb-2"><div class="text-sm text-gray-600">اقلام</div><div class="font-medium">${toPersianDigits(itemCount)}</div></div>
       <div class="flex justify-between mb-4"><div class="text-sm text-gray-600">جمع جزء</div><div class="font-medium">${formatPrice(
         subtotal
       )}</div></div>
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // ❌ no clearing cart anymore
         // ✅ show error message instead
-        showToast("در حال حاضر درگاه پرداخت آماده بهره برداری نیست", "error");
+        showToast("اختلال در اتصال به درگاه پرداخت", "error");
       });
     }
 

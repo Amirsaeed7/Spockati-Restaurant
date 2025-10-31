@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره ما | اس‌پاکتی</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind & Lucide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { vazir: ["Vazirmatn", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body class="font-vazir bg-gray-100 flex flex-col min-h-screen">
+    <div id="header-placeholder"></div>
+
+    <main id="main" class="flex-grow flex flex-col bg-white/30 p-6">
+      <section class="max-w-5xl mx-auto bg-white/80 rounded-xl shadow-md p-8">
+        <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">
+          درباره ما
+        </h1>
+        <p class="leading-8 text-gray-700 text-justify mb-4">
+          رستوران اس‌پاکتی با هدف ارائه‌ی بهترین غذاهای ایرانی و بین‌المللی در
+          محیطی آرام و دلنشین تأسیس شد. ما همواره تلاش می‌کنیم تا تجربه‌ای
+          بی‌نظیر از طعم، کیفیت و خدمت‌رسانی را برای مشتریان خود رقم بزنیم.
+        </p>
+        <p class="leading-8 text-gray-700 text-justify mb-4">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+          متنوع با هدف بهبود ابزارهای کاربردی می‌باشد.
+        </p>
+        <p class="leading-8 text-gray-700 text-justify">
+          هدف ما جلب رضایت شماست و از پیشنهادات و نظرات ارزشمندتان برای ارتقای
+          کیفیت خدمات استقبال می‌کنیم.
+        </p>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include.js"></script>
+    <script>lucide.createIcons();</script>
+  </body>
+</html>

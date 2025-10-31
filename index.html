@@ -7,7 +7,7 @@
 
     <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Vazirmatn:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -20,7 +20,7 @@
         theme: {
           extend: {
             fontFamily: {
-              marhey: ["Marhey", "sans-serif"],
+              vazir: ["Vazirmatn", "sans-serif"],
             },
           },
         },
@@ -29,13 +29,16 @@
 
     <link rel="stylesheet" href="css/home.css" />
   </head>
-  <body class="font-marhey bg-gray-100 flex flex-col min-h-screen">
+  <body class="font-vazir bg-gray-100 flex flex-col min-h-screen">
     <!-- Header placeholder -->
     <div id="header-placeholder"></div>
 
     <!-- Main Content -->
     <!-- index.html (excerpt) -->
-    <main id="main" class="flex-grow flex flex-col gap-0 bg-gray-100 bg-opacity-30">
+    <main
+      id="main"
+      class="flex-grow flex flex-col gap-0 bg-white/30"
+    >
       <section class="section">
         <!-- branchesList will be rendered dynamically by js/branches.js -->
         <ul id="branchesList" class="cards"></ul>
@@ -56,6 +59,5 @@
       lucide.createIcons();
     </script>
     <script src="js/cartBadge.js"></script>
-
   </body>
 </html>
